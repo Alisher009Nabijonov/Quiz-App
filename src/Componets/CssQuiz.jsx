@@ -6,42 +6,187 @@ const shuffle = (array) => {
 
 const questions = [
   {
-    questionText: "css Mening ismim nima?",
+    questionText: "CSS nima uchun ishlatiladi?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "Veb-sahifa tuzilishini belgilash uchun", isCorrect: false },
+      { answerText: "Sahifa ko'rinishini bezatish uchun", isCorrect: true },
+      { answerText: "Ma'lumotlarni bazaga saqlash uchun", isCorrect: false },
+      { answerText: "JavaScript kodini yozish uchun", isCorrect: false },
     ],
   },
   {
-    questionText: "css Mening dvdvfismim nima?",
+    questionText: "CSSda rangni belgilash uchun qaysi xususiyat ishlatiladi?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "color", isCorrect: true },
+      { answerText: "background", isCorrect: false },
+      { answerText: "font-size", isCorrect: false },
+      { answerText: "margin", isCorrect: false },
     ],
   },
   {
-    questionText: "css Mening ismimvfdv nima?",
+    questionText: "CSSda qanday qilib sahifaga fon rangi qo'shish mumkin?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "background-color", isCorrect: true },
+      { answerText: "font-color", isCorrect: false },
+      { answerText: "border-color", isCorrect: false },
+      { answerText: "color", isCorrect: false },
     ],
   },
   {
-    questionText: "css Mening ismim vfdvfdnima?",
+    questionText: "CSS qaysi turdagi faylda saqlanadi?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: false },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: true },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: ".html", isCorrect: false },
+      { answerText: ".css", isCorrect: true },
+      { answerText: ".js", isCorrect: false },
+      { answerText: ".json", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda qaysi xususiyat elementlarning tashqi masofasini belgilaydi?",
+    answerOptions: [
+      { answerText: "margin", isCorrect: true },
+      { answerText: "padding", isCorrect: false },
+      { answerText: "border", isCorrect: false },
+      { answerText: "outline", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda matn o'lchamini o'zgartirish uchun qaysi xususiyat ishlatiladi?",
+    answerOptions: [
+      { answerText: "font-size", isCorrect: true },
+      { answerText: "text-size", isCorrect: false },
+      { answerText: "text-height", isCorrect: false },
+      { answerText: "font-style", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSS qaysi usulda HTML fayliga ulanishi mumkin?",
+    answerOptions: [
+      { answerText: "Inline, Internal, External", isCorrect: true },
+      { answerText: "Inline va Inline", isCorrect: false },
+      { answerText: "Link va Script", isCorrect: false },
+      { answerText: "HTML orqali", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda elementlarni qator bo'ylab joylashtirish uchun qaysi xususiyat ishlatiladi?",
+    answerOptions: [
+      { answerText: "display: inline", isCorrect: true },
+      { answerText: "display: block", isCorrect: false },
+      { answerText: "float", isCorrect: false },
+      { answerText: "flex-direction", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda font-family nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Matnni joylashtirish uchun", isCorrect: false },
+      { answerText: "Matn shriftini belgilash uchun", isCorrect: true },
+      { answerText: "Matn rangini belgilash uchun", isCorrect: false },
+      { answerText: "Matn hajmini belgilash uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda hover pseudo-class nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Element ustiga sichqoncha olib borilganda uslub qo'llash uchun", isCorrect: true },
+      { answerText: "Elementni ko'chirish uchun", isCorrect: false },
+      { answerText: "Element rangini o'zgartirish uchun", isCorrect: false },
+      { answerText: "HTML-ni o'zgartirish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda border-radius nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Matnni o'zgartirish uchun", isCorrect: false },
+      { answerText: "Chegarani yumaloqlashtirish uchun", isCorrect: true },
+      { answerText: "Rangni qo'shish uchun", isCorrect: false },
+      { answerText: "Matnni kesish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda z-index nima qiladi?",
+    answerOptions: [
+      { answerText: "Elementni 3D o'lchovda tartiblaydi", isCorrect: false },
+      { answerText: "Elementlar qavat tartibini belgilaydi", isCorrect: true },
+      { answerText: "Element rangini aniqlaydi", isCorrect: false },
+      { answerText: "Element hajmini o'zgartiradi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda flexbox yordamida elementlarni qanday joylashtirish mumkin?",
+    answerOptions: [
+      { answerText: "display: flex", isCorrect: true },
+      { answerText: "display: inline", isCorrect: false },
+      { answerText: "display: grid", isCorrect: false },
+      { answerText: "display: block", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSS grid qaysi maqsadda ishlatiladi?",
+    answerOptions: [
+      { answerText: "Elementlarni animatsiya qilish uchun", isCorrect: false },
+      { answerText: "Elementlarni grid tuzilmasida joylashtirish uchun", isCorrect: true },
+      { answerText: "Element rangini o'zgartirish uchun", isCorrect: false },
+      { answerText: "Elementlarni yashirish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda opacity qiymati nimani belgilaydi?",
+    answerOptions: [
+      { answerText: "Elementning ko'rinuvchanlik darajasini", isCorrect: true },
+      { answerText: "Elementning kattaligini", isCorrect: false },
+      { answerText: "Elementning rangini", isCorrect: false },
+      { answerText: "Elementning pozitsiyasini", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda padding nima qiladi?",
+    answerOptions: [
+      { answerText: "Element ichki masofasini belgilaydi", isCorrect: true },
+      { answerText: "Element tashqi masofasini belgilaydi", isCorrect: false },
+      { answerText: "Element rangini belgilaydi", isCorrect: false },
+      { answerText: "Elementning chetini o'zgartiradi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda elementni markazlash uchun qaysi xususiyat ishlatiladi?",
+    answerOptions: [
+      { answerText: "text-align: center", isCorrect: true },
+      { answerText: "margin: 0", isCorrect: false },
+      { answerText: "float: center", isCorrect: false },
+      { answerText: "align: center", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda media query nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Animatsiya yaratish uchun", isCorrect: false },
+      { answerText: "Qurilma o'lchamiga moslashtirish uchun", isCorrect: true },
+      { answerText: "Chegaralarni sozlash uchun", isCorrect: false },
+      { answerText: "Fon rangi o'zgartirish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSS-da qaysi xususiyat shrift stilini o'zgartiradi?",
+    answerOptions: [
+      { answerText: "font-style", isCorrect: true },
+      { answerText: "font-size", isCorrect: false },
+      { answerText: "font-family", isCorrect: false },
+      { answerText: "text-style", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda max-width nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Maksimal kenglikni belgilash uchun", isCorrect: true },
+      { answerText: "Minimal kenglikni belgilash uchun", isCorrect: false },
+      { answerText: "Rangni o'zgartirish uchun", isCorrect: false },
+      { answerText: "Element balandligini o'zgartirish uchun", isCorrect: false },
     ],
   },
 ];
+
 
 const CssQuiz = () => {
   const [shuffledQuestions, setShuffledQuestions] = useState([]);

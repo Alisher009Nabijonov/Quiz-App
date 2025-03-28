@@ -6,42 +6,187 @@ const shuffle = (array) => {
 
 const questions = [
   {
-    questionText: "react Mening ismim nima?",
+    questionText: "React nima?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "Server tomonida ishlatiladigan ramka", isCorrect: false },
+      { answerText: "Frontend uchun JavaScript kutubxonasi", isCorrect: true },
+      { answerText: "Ma'lumotlar bazasi boshqaruv tizimi", isCorrect: false },
+      { answerText: "Veb-saytlarni hosting qilish platformasi", isCorrect: false },
     ],
   },
   {
-    questionText: "react Mening dvdvfismim nima?",
+    questionText: "Reactda komponentlar qanday turlarga bo'linadi?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "Funktsional va Klass komponentlar", isCorrect: true },
+      { answerText: "Dinamik va Statik komponentlar", isCorrect: false },
+      { answerText: "Oddiy va Murakkab komponentlar", isCorrect: false },
+      { answerText: "Frontend va Backend komponentlar", isCorrect: false },
     ],
   },
   {
-    questionText: "react Mening ismimvfdv nima?",
+    questionText: "Reactda 'state' nima uchun ishlatiladi?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "Komponent holatini boshqarish uchun", isCorrect: true },
+      { answerText: "Styling uchun", isCorrect: false },
+      { answerText: "Ma'lumotlarni serverga yuborish uchun", isCorrect: false },
+      { answerText: "Komponentlar o'rtasida aloqa o'rnatish uchun", isCorrect: false },
     ],
   },
   {
-    questionText: "react Mening ismim vfdvfdnima?",
+    questionText: "Reactda 'props' nima?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: false },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: true },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "Komponentning o'zgaruvchi qiymatlari", isCorrect: false },
+      { answerText: "Komponentga tashqaridan o'tkaziladigan ma'lumotlar", isCorrect: true },
+      { answerText: "Komponentning DOM bilan ishlash usullari", isCorrect: false },
+      { answerText: "Styling ma'lumotlari", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda 'useState' hooki nima qiladi?",
+    answerOptions: [
+      { answerText: "Styling o'zgartirish uchun", isCorrect: false },
+      { answerText: "Komponentning holatini boshqarish uchun", isCorrect: true },
+      { answerText: "Komponentlar orasidagi aloqa uchun", isCorrect: false },
+      { answerText: "Komponentni DOMga joylashtirish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda 'useEffect' hooki qachon ishlatiladi?",
+    answerOptions: [
+      { answerText: "Komponent har safar render bo'lganda yon ta'sirlarni boshqarish uchun", isCorrect: true },
+      { answerText: "Styling uchun", isCorrect: false },
+      { answerText: "Faol holatlarni o'zgartirish uchun", isCorrect: false },
+      { answerText: "Komponent DOMdan o'chirilganda", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda 'key' props nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Komponentlarga styling qo'shish uchun", isCorrect: false },
+      { answerText: "Elementlarning unikal identifikatori uchun", isCorrect: true },
+      { answerText: "Ma'lumotlarni serverga yuborish uchun", isCorrect: false },
+      { answerText: "Komponentning render tezligini oshirish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda 'virtual DOM' nima?",
+    answerOptions: [
+      { answerText: "Brauzerning asosiy DOMi", isCorrect: false },
+      { answerText: "Realdagi DOMning yengil versiyasi", isCorrect: true },
+      { answerText: "Server tarafidagi DOM", isCorrect: false },
+      { answerText: "DOMni animatsiya qilish kutubxonasi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "React komponentlarida JSX nima?",
+    answerOptions: [
+      { answerText: "CSSning yangi versiyasi", isCorrect: false },
+      { answerText: "JavaScript va HTML aralashmasi", isCorrect: true },
+      { answerText: "Server tomonida ishlatiladigan til", isCorrect: false },
+      { answerText: "Ma'lumotlarni saqlash formati", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda Context API nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Komponentlar o'rtasida ma'lumot ulashish uchun", isCorrect: true },
+      { answerText: "Stylingni qo'llash uchun", isCorrect: false },
+      { answerText: "Ma'lumotlarni serverga saqlash uchun", isCorrect: false },
+      { answerText: "Komponentlarni DOMga qo'shish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda 'Fragments' nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Ma'lumotlarni filtrlash uchun", isCorrect: false },
+      { answerText: "DOMda qo'shimcha elementlar qo'shmasdan guruhlash uchun", isCorrect: true },
+      { answerText: "Stylingni boshqarish uchun", isCorrect: false },
+      { answerText: "Komponentlarni birlashtirish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda komponentlar ichida qaysi hook ishlatiladi?",
+    answerOptions: [
+      { answerText: "useState", isCorrect: true },
+      { answerText: "setInterval", isCorrect: false },
+      { answerText: "querySelector", isCorrect: false },
+      { answerText: "addEventListener", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda komponentlar qanday render qilinadi?",
+    answerOptions: [
+      { answerText: "Static render orqali", isCorrect: false },
+      { answerText: "Virtual DOM orqali", isCorrect: true },
+      { answerText: "Serverdan yuklanadi", isCorrect: false },
+      { answerText: "HTML fayllar orqali", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda routingni boshqarish uchun nima ishlatiladi?",
+    answerOptions: [
+      { answerText: "React Router", isCorrect: true },
+      { answerText: "React Navigation", isCorrect: false },
+      { answerText: "React Route", isCorrect: false },
+      { answerText: "React Path", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda Redux nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Komponentlar orasida holat boshqaruvi uchun", isCorrect: true },
+      { answerText: "Stylingni boshqarish uchun", isCorrect: false },
+      { answerText: "Routingni boshqarish uchun", isCorrect: false },
+      { answerText: "DOMni yangilash uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda default props qanday o'rnatiladi?",
+    answerOptions: [
+      { answerText: "component.defaultProps", isCorrect: true },
+      { answerText: "component.props", isCorrect: false },
+      { answerText: "component.styles", isCorrect: false },
+      { answerText: "component.state", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda qaysi hook global holatlarni boshqaradi?",
+    answerOptions: [
+      { answerText: "useReducer", isCorrect: true },
+      { answerText: "useState", isCorrect: false },
+      { answerText: "useEffect", isCorrect: false },
+      { answerText: "useContext", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactni kim yaratgan?",
+    answerOptions: [
+      { answerText: "Google", isCorrect: false },
+      { answerText: "Facebook (Meta)", isCorrect: true },
+      { answerText: "Twitter", isCorrect: false },
+      { answerText: "Microsoft", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "React komponentlari qaysi ma'lumot formatini qaytaradi?",
+    answerOptions: [
+      { answerText: "HTML", isCorrect: false },
+      { answerText: "JSX", isCorrect: true },
+      { answerText: "CSS", isCorrect: false },
+      { answerText: "XML", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Reactda 'strict mode' nima qiladi?",
+    answerOptions: [
+      { answerText: "Stylingni tekshiradi", isCorrect: false },
+      { answerText: "Koddagi xatolarni aniqlaydi", isCorrect: true },
+      { answerText: "Ruxsatlarni boshqaradi", isCorrect: false },
+      { answerText: "DOMni yangilaydi", isCorrect: false },
     ],
   },
 ];
+
 const ReactQuiz = () => {
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
   const [currentqustion, setCurrentqustion] = useState(0);

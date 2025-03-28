@@ -6,42 +6,187 @@ const shuffle = (array) => {
 
 const questions = [
   {
-    questionText: "frontend Mening ismim nima?",
+    questionText: "Frontend nima?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "Veb-saytning mijoz tomoni", isCorrect: true },
+      { answerText: "Ma'lumotlar bazasi", isCorrect: false },
+      { answerText: "Server tomoni", isCorrect: false },
+      { answerText: "Havola yaratish texnologiyasi", isCorrect: false },
     ],
   },
   {
-    questionText: "frontend Mening dvdvfismim nima?",
+    questionText: "Frontendda qaysi texnologiyalar ishlatiladi?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "HTML, CSS, JavaScript", isCorrect: true },
+      { answerText: "PHP, Ruby, Python", isCorrect: false },
+      { answerText: "SQL, NoSQL, MongoDB", isCorrect: false },
+      { answerText: "C++, Java, Kotlin", isCorrect: false },
     ],
   },
   {
-    questionText: "frontend Mening ismimvfdv nima?",
+    questionText: "HTML nima uchun ishlatiladi?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: true },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: false },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "Veb-saytning tuzilishini yaratish uchun", isCorrect: true },
+      { answerText: "Styling qo'shish uchun", isCorrect: false },
+      { answerText: "Ma'lumotlarni saqlash uchun", isCorrect: false },
+      { answerText: "Interaktivlik qo'shish uchun", isCorrect: false },
     ],
   },
   {
-    questionText: "frontend Mening ismim vfdvfdnima?",
+    questionText: "CSS nima uchun ishlatiladi?",
     answerOptions: [
-      { answerText: "Alisher", isCorrect: false },
-      { answerText: "Kimsanbek", isCorrect: false },
-      { answerText: "Kachok", isCorrect: true },
-      { answerText: "Chumo", isCorrect: false },
+      { answerText: "Veb-sahifa dizaynini yaratish uchun", isCorrect: true },
+      { answerText: "Ma'lumotlarni o'zgartirish uchun", isCorrect: false },
+      { answerText: "Ma'lumotlar saqlash uchun", isCorrect: false },
+      { answerText: "Server bilan aloqa qilish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "JavaScript nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Interaktivlik qo'shish uchun", isCorrect: true },
+      { answerText: "Styling uchun", isCorrect: false },
+      { answerText: "Veb-sayt tuzilishini yaratish uchun", isCorrect: false },
+      { answerText: "Server tomoni dasturlash uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Responsiv dizayn nima?",
+    answerOptions: [
+      { answerText: "Veb-sahifaning barcha ekranlarda yaxshi ko'rinishi", isCorrect: true },
+      { answerText: "Sahifaning tezligi", isCorrect: false },
+      { answerText: "Veb-saytning xavfsizligi", isCorrect: false },
+      { answerText: "Ma'lumotlarni saqlash tizimi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda 'flexbox' nima?",
+    answerOptions: [
+      { answerText: "Elementlarni joylashuvi uchun model", isCorrect: true },
+      { answerText: "Styling uchun kutubxona", isCorrect: false },
+      { answerText: "Ma'lumotlar bazasi modeli", isCorrect: false },
+      { answerText: "Server tomoni vositasi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda 'grid' nima?",
+    answerOptions: [
+      { answerText: "Elementlarni 2D joylashuvi uchun model", isCorrect: true },
+      { answerText: "Brauzer uchun plugin", isCorrect: false },
+      { answerText: "Interaktivlikni qo'shish texnologiyasi", isCorrect: false },
+      { answerText: "HTML bilan ishlash kutubxonasi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "JavaScriptda DOM nima?",
+    answerOptions: [
+      { answerText: "Veb-sahifaning tuzilmasini boshqarish interfeysi", isCorrect: true },
+      { answerText: "Styling modeli", isCorrect: false },
+      { answerText: "Server bilan aloqa qilish texnologiyasi", isCorrect: false },
+      { answerText: "Ma'lumotlarni saqlash vositasi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Frontendda 'framework' nima?",
+    answerOptions: [
+      { answerText: "Oldindan tayyorlangan dasturiy muhit", isCorrect: true },
+      { answerText: "Veb-sahifa uchun plugin", isCorrect: false },
+      { answerText: "Ma'lumotlar saqlash formati", isCorrect: false },
+      { answerText: "Veb-sayt uchun tarmoq vositasi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Bootstrap nima?",
+    answerOptions: [
+      { answerText: "CSS uchun tayyorlangan framework", isCorrect: true },
+      { answerText: "JavaScript kutubxonasi", isCorrect: false },
+      { answerText: "Veb-server dasturi", isCorrect: false },
+      { answerText: "Ma'lumotlar bazasi modeli", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Frontend dasturlash uchun eng mashhur kutubxona qaysi?",
+    answerOptions: [
+      { answerText: "React", isCorrect: true },
+      { answerText: "Express", isCorrect: false },
+      { answerText: "Node.js", isCorrect: false },
+      { answerText: "Django", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Frontendda REST API nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Server bilan ma'lumot almashish uchun", isCorrect: true },
+      { answerText: "Stylingni boshqarish uchun", isCorrect: false },
+      { answerText: "Veb-sayt xavfsizligini ta'minlash uchun", isCorrect: false },
+      { answerText: "Ma'lumotlarni saqlash uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Frontendda 'npm' nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Kutubxonalarni boshqarish uchun", isCorrect: true },
+      { answerText: "Serverni boshqarish uchun", isCorrect: false },
+      { answerText: "Stylingni saqlash uchun", isCorrect: false },
+      { answerText: "Ma'lumotlarni eksport qilish uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Frontend dasturlashda 'webpack' nima?",
+    answerOptions: [
+      { answerText: "Modul birlashtiruvchi vosita", isCorrect: true },
+      { answerText: "Styling kutubxonasi", isCorrect: false },
+      { answerText: "Veb-sahifalarni hosting qilish platformasi", isCorrect: false },
+      { answerText: "JavaScript framework", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda 'media query' nima?",
+    answerOptions: [
+      { answerText: "Ekran hajmiga moslashuvni boshqarish", isCorrect: true },
+      { answerText: "Veb-saytga API qo'shish", isCorrect: false },
+      { answerText: "Ma'lumotlar almashinuvi vositasi", isCorrect: false },
+      { answerText: "Komponentlarni boshqarish texnologiyasi", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Frontendda interaktivlik uchun nima ishlatiladi?",
+    answerOptions: [
+      { answerText: "JavaScript", isCorrect: true },
+      { answerText: "HTML", isCorrect: false },
+      { answerText: "CSS", isCorrect: false },
+      { answerText: "SQL", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Frontendda 'performance optimization' nima uchun zarur?",
+    answerOptions: [
+      { answerText: "Veb-sayt tezligini oshirish uchun", isCorrect: true },
+      { answerText: "Stylingni boshqarish uchun", isCorrect: false },
+      { answerText: "Serverni boshqarish uchun", isCorrect: false },
+      { answerText: "Ma'lumotlarni saqlash uchun", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "CSSda 'z-index' nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Elementlarning qatlam ustuvorligini belgilash uchun", isCorrect: true },
+      { answerText: "Elementning kengligini belgilash uchun", isCorrect: false },
+      { answerText: "Elementni joylashuvi", isCorrect: false },
+      { answerText: "Elementning rangini boshqarish", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Frontend dasturlashda Lighthouse nima uchun ishlatiladi?",
+    answerOptions: [
+      { answerText: "Veb-saytni optimallashtirishni baholash", isCorrect: true },
+      { answerText: "Ma'lumotlarni yuklash uchun", isCorrect: false },
+      { answerText: "Stylingni boshqarish uchun", isCorrect: false },
+      { answerText: "Veb-sayt xavfsizligini tekshirish", isCorrect: false },
     ],
   },
 ];
+
 const FrontendQuiz = () => {
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
   const [currentqustion, setCurrentqustion] = useState(0);

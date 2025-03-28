@@ -15,7 +15,7 @@ import FrontendQuiz from "./Componets/FrontendQuiz";
 
 // Pages
 import HomeNavbar from "./Pages/HomeNavbar";
-import Nav from "./Pages/nav";
+// import Nav from "./Pages/nav";
 const App = () => {
 
   const routes = createBrowserRouter(
