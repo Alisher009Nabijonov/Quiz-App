@@ -8,7 +8,7 @@ const questions = [
   {
     questionText: "CSS nima uchun ishlatiladi?",
     answerOptions: [
-      { answerText: "Veb-sahifa tuzilishini belgilash uchun", isCorrect: false },
+      { answerText: "Veb-sahifa tuzilishini belgilash uchun.", isCorrect: false },
       { answerText: "Sahifa ko'rinishini bezatish uchun", isCorrect: true },
       { answerText: "Ma'lumotlarni bazaga saqlash uchun", isCorrect: false },
       { answerText: "JavaScript kodini yozish uchun", isCorrect: false },

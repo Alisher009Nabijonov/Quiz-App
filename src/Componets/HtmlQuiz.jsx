@@ -8,7 +8,7 @@ const questions = [
   {
     questionText: "HTML nima?",
     answerOptions: [
-      { answerText: "Hyper Text Markup Language", isCorrect: true },
+      { answerText: "Hyper Text Markup Language.", isCorrect: true },
       { answerText: "Home Tool Markup Language", isCorrect: false },
       { answerText: "Hyperlinks and Text Markup Language", isCorrect: false },
       { answerText: "Highlevel Text Management Language", isCorrect: false },

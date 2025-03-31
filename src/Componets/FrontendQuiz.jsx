@@ -8,7 +8,7 @@ const questions = [
   {
     questionText: "Frontend nima?",
     answerOptions: [
-      { answerText: "Veb-saytning mijoz tomoni", isCorrect: true },
+      { answerText: "Veb-saytning mijoz tomoni.", isCorrect: true },
       { answerText: "Ma'lumotlar bazasi", isCorrect: false },
       { answerText: "Server tomoni", isCorrect: false },
       { answerText: "Havola yaratish texnologiyasi", isCorrect: false },

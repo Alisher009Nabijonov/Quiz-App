@@ -8,7 +8,7 @@ const questions = [
   {
     questionText: "JavaScript nima uchun ishlatiladi?",
     answerOptions: [
-      { answerText: "Veb sahifani bezatish uchun", isCorrect: false },
+      { answerText: "Veb sahifani bezatish uchun.", isCorrect: false },
       { answerText: "Dinamik funksiyalar qo'shish uchun", isCorrect: true },
       { answerText: "Ma'lumotlarni bazaga saqlash uchun", isCorrect: false },
       { answerText: "Serverni boshqarish uchun", isCorrect: false },
